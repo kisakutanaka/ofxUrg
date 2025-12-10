@@ -1,0 +1,2 @@
+# Silicon Mac of_v0.12.0で動作するurgのアドオン
+urg_libraryのSerial通信対応部分がlinuxとWindowsにしか対応していないことが原因でビルドが通らなかったため、一旦該当箇所のコメントアウトで動作させた。
