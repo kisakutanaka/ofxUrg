@@ -16,6 +16,7 @@
   \todo Fix the code to be C90 compliant, but keeping the "//" comments
 */
 
+#if defined(URG_WINDOWS_OS)
 #include "urg_serial_utils.h"
 #include "urg_detect_os.h"
 #include <windows.h>
@@ -189,3 +190,5 @@ int urg_serial_is_urg_port(int index)
         return is_urg_ports[index];
     }
 }
+
+#endif

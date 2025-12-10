@@ -9,6 +9,8 @@
   $Id$
 */
 
+#ifdef QRK_MAC_OS
+
 #include "urg_ring_buffer.h"
 #include <fcntl.h>
 #include <unistd.h>
@@ -249,3 +251,5 @@ int serial_read(urg_serial_t *serial, char *data, int max_size, int timeout)
                                serial, timeout);
     return filled;
 }
+
+#endif

@@ -10,6 +10,8 @@
   $Id$
 */
 
+#if defined(URG_WINDOWS_OS)
+
 #include "urg_serial.h"
 #include <stdio.h>
 
@@ -236,3 +238,5 @@ int serial_read(urg_serial_t *serial, char *data, int max_size, int timeout)
                                max_size - filled, serial, timeout);
     return filled;
 }
+
+#endif
