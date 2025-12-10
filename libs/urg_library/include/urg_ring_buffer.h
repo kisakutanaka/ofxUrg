@@ -3,24 +3,36 @@
 
 /*!
   \file
+  \~japanese
+  \brief リングバッファ
+  \~english
   \brief Ring buffer functions
+  \~
   \author Satofumi KAMIMURA
 
   $Id$
 */
 
 
-//!  Control structure of the ring buffer
+//! \~japanese リングバッファの管理情報  \~english Control structure of the ring buffer
 typedef struct
 {
-    char *buffer;                 //!<  Pointer to the data buffer
-    int buffer_size;              //!<  Buffer size
-    int first;                    //!<  Index of the first entry of the buffer
-    int last;                     //!<  Index of the last entry of the buffer
+    char *buffer;                 //!< \~japanese バッファへのポインタ  \~english Pointer to the data buffer
+    int buffer_size;              //!< \~japanese バッファサイズ  \~english Buffer size
+    int first;                    //!< \~japanese バッファの先頭位置  \~english Index of the first entry of the buffer
+    int last;                     //!< \~japanese バッファの最終位置  \~english Index of the last entry of the buffer
 } ring_buffer_t;
 
 
 /*!
+  \~japanese
+  \brief 初期化
+
+  \param[in] ring リングバッファの構造体
+  \param[in] buffer 割り当てるバッファ
+  \param[in] shift_length バッファサイズの 2 の乗数
+
+  \~english
   \brief Initialization
 
   \param[in] ring Pointer to the ring buffer data structure
@@ -32,6 +44,12 @@ extern void ring_initialize(ring_buffer_t *ring,
 
 
 /*!
+  \~japanese
+  \brief リングバッファのクリア
+
+  \param[in] ring リングバッファの構造体
+
+  \~english
   \brief Clears the ring  buffer
 
   \param[in] ring Pointer to the ring buffer data structure
@@ -40,6 +58,12 @@ extern void ring_clear(ring_buffer_t *ring);
 
 
 /*!
+  \~japanese
+  \brief 格納データ数を返す
+
+  \param[in] ring リングバッファの構造体
+
+  \~english
   \brief Returns the number of elements on the buffer
 
   \param[in] ring Pointer to the ring buffer data structure
@@ -48,6 +72,12 @@ extern int ring_size(const ring_buffer_t *ring);
 
 
 /*!
+  \~japanese
+  \brief 最大の格納データ数を返す
+
+  \param[in] ring リングバッファの構造体
+
+  \~english
   \brief Returns the maximum number of elements of the ring buffer
 
   \param[in] ring Pointer to the ring buffer data structure
@@ -56,6 +86,16 @@ extern int ring_capacity(const ring_buffer_t *ring);
 
 
 /*!
+  \~japanese
+  \brief データの格納
+
+  \param[in] ring リングバッファの構造体
+  \param[in] data データ
+  \param[in] size データサイズ
+
+  \return 格納したデータ数
+
+  \~english
   \brief Stores data on the ring buffer
 
   \param[in] ring Pointer to the ring buffer data structure
@@ -68,6 +108,16 @@ extern int ring_write(ring_buffer_t *ring, const char *data, int size);
 
 
 /*!
+  \~japanese
+  \brief データの取り出し
+
+  \param[in] ring リングバッファの構造体
+  \param[out] buffer データ
+  \param[in] size 最大のデータサイズ
+
+  \return 取り出したデータ数
+
+  \~english
   \brief Extracts data from the ring buffer
 
   \param[in] ring Pointer to the ring buffer data structure

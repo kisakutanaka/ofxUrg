@@ -3,7 +3,11 @@
 
 /*!
   \file
+  \~japanese
+  \brief URG ドライバ
+  \~english
   \brief URG driver
+  \~
   \author Satofumi KAMIMURA
 
   $Id$
@@ -15,7 +19,7 @@
 
 namespace qrk
 {
-    //!  URG driver
+    //! \~japanese URG ドライバ  \~english URG driver
     class Urg_driver : public Lidar
     {
     public:
@@ -43,22 +47,31 @@ namespace qrk
         bool laser_on(void);
         bool laser_off(void);
 
-        void reboot(void);
+        bool reboot(void);
 
         void sleep(void);
         void wakeup(void);
         bool is_stable(void);
 
-        //!  Starts data measurement process
+        //! \~japanese データ取得の開始  \~english Starts data measurement process
         bool start_measurement(measurement_type_t type = Distance,
                                int scan_times = Infinity_times,
                                int skip_scan = 0);
 
-        //!  Receives measurement data
+        void set_ignore_checkSumError(bool ignore = true);
+
+        //! \~japanese 受信データの受け取り  \~english Receives measurement data
         bool get_distance(std::vector<long>& data, long *time_stamp = NULL);
         bool get_distance_intensity(std::vector<long>& data,
                                     std::vector<unsigned short>& intensity,
                                     long *time_stamp = NULL);
+
+		bool get_distance_io(std::vector<long>& data, std::vector<long>& io, long *time_stamp = NULL);
+
+		bool get_distance_intensity_io(std::vector<long>& data,
+			                           std::vector<unsigned short>& intensity,
+			                           std::vector<long>& io,
+			                           long *time_stamp = NULL);
 
         bool get_multiecho(std::vector<long>& data_multi,
                            long* time_stamp = NULL);
@@ -71,14 +84,16 @@ namespace qrk
         bool set_scanning_parameter(int first_step, int last_step,
                                     int skip_step = 1);
 
-        //!  Stops data measurement process
+        //! \~japanese データ取得の中断  \~english Stops data measurement process
         void stop_measurement(void);
 
-        //!  Synchronization of timestamps
+        //! \~japanese タイムスタンプの同期  \~english Synchronization of timestamps
+        bool start_time_stamp_mode(void);
+        bool stop_time_stamp_mode(void);
         bool set_sensor_time_stamp(long time_stamp);
         long get_sensor_time_stamp(void);
 
-        //!  Angle conversion functions
+        //! \~japanese 角度変換  \~english Angle conversion functions
         double index2rad(int index) const;
         double index2deg(int index) const;
         int rad2index(double radian) const;
@@ -96,6 +111,7 @@ namespace qrk
         long scan_usec(void) const;
         int max_data_size(void) const;
         int max_echo_size(void) const;
+		int max_io_size(void) const;
 
         const char* product_type(void) const;
         const char* firmware_version(void) const;
@@ -114,7 +130,7 @@ namespace qrk
         Urg_driver& operator = (const Urg_driver& rhs);
 
         struct pImpl;
-        std::auto_ptr<pImpl> pimpl;
+        std::unique_ptr<pImpl> pimpl;
     };
 }
 

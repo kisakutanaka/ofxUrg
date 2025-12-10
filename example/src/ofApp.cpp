@@ -1,61 +1,81 @@
-#include "ofMain.h"
-#include "ofxUrg.h"
+#include "ofApp.h"
 
-class ofApp : public ofBaseApp {
+//--------------------------------------------------------------
+void ofApp::setup(){
 
-    ofxUrg::Device urg;
-    ofEasyCam cam;
+}
 
-public:
-    void setup()
-    {
-        ofSetFrameRate(60);
-        ofSetVerticalSync(true);
-        ofBackground(0);
+//--------------------------------------------------------------
+void ofApp::update(){
 
-        urg.setMode(ofxUrg::DISTANCE_INTENSITY);
-        urg.setupEthernet("192.168.0.200");
+}
 
-        ofLogNotice("Product", urg.productType());
-        ofLogNotice("Serial", urg.serialId());
-        ofLogNotice("Status", urg.status());
-        ofLogNotice("State", urg.state());
-        ofLogNotice("Firmware version", urg.firmwareVersion());
+//--------------------------------------------------------------
+void ofApp::draw(){
 
-        urg.start();
-    }
+}
 
-    void update()
-    {
-        urg.update();
-    }
+//--------------------------------------------------------------
+void ofApp::exit(){
 
-    void draw()
-    {
-        urg.drawDebug();
-        cam.begin();
-        ofPushMatrix();
-        float s = 0.1;
-        ofScale(s, s, s);
-        ofRotateZ(-90);
-        urg.drawDebugPolar();
-        ofPopMatrix();
-        ofDrawAxis(100);
-        cam.end();
+}
 
-        ofDrawBitmapString(ofToString(ofGetFrameRate(), 0), 20, 20);
-        ofDrawBitmapString(ofToString(urg.getFps()), 20, 40);
-    }
-};
+//--------------------------------------------------------------
+void ofApp::keyPressed(int key){
 
-//========================================================================
-int main( ){
-    ofSetupOpenGL(1024,768,OF_WINDOW);            // <-------- setup the GL context
+}
 
-    // this kicks off the running of my app
-    // can be OF_WINDOW or OF_FULLSCREEN
-    // pass in width and height too:
-    ofRunApp(new ofApp());
+//--------------------------------------------------------------
+void ofApp::keyReleased(int key){
 
-    return 0;
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseMoved(int x, int y ){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseDragged(int x, int y, int button){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mousePressed(int x, int y, int button){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseReleased(int x, int y, int button){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseScrolled(int x, int y, float scrollX, float scrollY){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseEntered(int x, int y){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseExited(int x, int y){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::windowResized(int w, int h){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::gotMessage(ofMessage msg){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::dragEvent(ofDragInfo dragInfo){ 
+
 }

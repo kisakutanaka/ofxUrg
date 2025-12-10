@@ -1,486 +1,716 @@
-// !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		46933BD722C2311300D06D9B /* ofxUrg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46933BD622C2311300D06D9B /* ofxUrg.cpp */; };
-		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
-		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
-			remoteInfo = openFrameworks;
-		};
-		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
-			remoteInfo = openFrameworks;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		0798DFCCB27AE141B02AEEA1 /* urg_connection.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = urg_connection.h; path = ../../../addons/ofxUrg/libs/urg_library/include/urg_connection.h; sourceTree = SOURCE_ROOT; };
-		1961BCC723203C023B528B25 /* detect_os.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = detect_os.h; path = ../../../addons/ofxUrg/libs/urg_library/include/detect_os.h; sourceTree = SOURCE_ROOT; };
-		1B73C66848AF483A9D2F8A7D /* urg_tcpclient.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = urg_tcpclient.h; path = ../../../addons/ofxUrg/libs/urg_library/include/urg_tcpclient.h; sourceTree = SOURCE_ROOT; };
-		2ED024CDB7A3F57950EA7A33 /* math_utilities.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = math_utilities.h; path = ../../../addons/ofxUrg/libs/urg_library/include/math_utilities.h; sourceTree = SOURCE_ROOT; };
-		46933BD622C2311300D06D9B /* ofxUrg.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofxUrg.cpp; path = ../src/ofxUrg.cpp; sourceTree = "<group>"; };
-		487F6E8E807961A19AD32AB3 /* urg_detect_os.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = urg_detect_os.h; path = ../../../addons/ofxUrg/libs/urg_library/include/urg_detect_os.h; sourceTree = SOURCE_ROOT; };
-		496E5C048EA582FCB48C5FF2 /* urg_utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = urg_utils.h; path = ../../../addons/ofxUrg/libs/urg_library/include/urg_utils.h; sourceTree = SOURCE_ROOT; };
-		58EB4AD96E18E0F6FC7D866D /* urg_debug.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = urg_debug.h; path = ../../../addons/ofxUrg/libs/urg_library/include/urg_debug.h; sourceTree = SOURCE_ROOT; };
-		8A85937FB8D35173897C7EAE /* ticks.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ticks.h; path = ../../../addons/ofxUrg/libs/urg_library/include/ticks.h; sourceTree = SOURCE_ROOT; };
-		A293CC5C9578CA90BAA28976 /* urg_serial.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = urg_serial.h; path = ../../../addons/ofxUrg/libs/urg_library/include/urg_serial.h; sourceTree = SOURCE_ROOT; };
-		A745B0BFFB6D0837125F84DC /* urg_serial_utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = urg_serial_utils.h; path = ../../../addons/ofxUrg/libs/urg_library/include/urg_serial_utils.h; sourceTree = SOURCE_ROOT; };
-		B489F964670BFD1FF5BD4FC3 /* urg_errno.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = urg_errno.h; path = ../../../addons/ofxUrg/libs/urg_library/include/urg_errno.h; sourceTree = SOURCE_ROOT; };
-		B4C7619462D8DBFEC72B9230 /* ofxUrg.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUrg.h; path = ../../../addons/ofxUrg/src/ofxUrg.h; sourceTree = SOURCE_ROOT; };
-		C35B26905394612A341670AC /* urg_ring_buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = urg_ring_buffer.h; path = ../../../addons/ofxUrg/libs/urg_library/include/urg_ring_buffer.h; sourceTree = SOURCE_ROOT; };
-		E27B76E5AC68116DBBFE7205 /* Urg_driver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Urg_driver.h; path = ../../../addons/ofxUrg/libs/urg_library/include/Urg_driver.h; sourceTree = SOURCE_ROOT; };
-		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
-		E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
-		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
-		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
-		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
-		EB4A606844268D849C660E5D /* Lidar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Lidar.h; path = ../../../addons/ofxUrg/libs/urg_library/include/Lidar.h; sourceTree = SOURCE_ROOT; };
-		F792C48EFF7D1775CA5A6DB6 /* urg_sensor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = urg_sensor.h; path = ../../../addons/ofxUrg/libs/urg_library/include/urg_sensor.h; sourceTree = SOURCE_ROOT; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		65181AB4D0C9ABB18E8CFD09 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				487F6E8E807961A19AD32AB3 /* urg_detect_os.h */,
-				1961BCC723203C023B528B25 /* detect_os.h */,
-				B489F964670BFD1FF5BD4FC3 /* urg_errno.h */,
-				EB4A606844268D849C660E5D /* Lidar.h */,
-				E27B76E5AC68116DBBFE7205 /* Urg_driver.h */,
-				C35B26905394612A341670AC /* urg_ring_buffer.h */,
-				F792C48EFF7D1775CA5A6DB6 /* urg_sensor.h */,
-				0798DFCCB27AE141B02AEEA1 /* urg_connection.h */,
-				58EB4AD96E18E0F6FC7D866D /* urg_debug.h */,
-				A745B0BFFB6D0837125F84DC /* urg_serial_utils.h */,
-				A293CC5C9578CA90BAA28976 /* urg_serial.h */,
-				496E5C048EA582FCB48C5FF2 /* urg_utils.h */,
-				1B73C66848AF483A9D2F8A7D /* urg_tcpclient.h */,
-				2ED024CDB7A3F57950EA7A33 /* math_utilities.h */,
-				8A85937FB8D35173897C7EAE /* ticks.h */,
-			);
-			name = include;
-			sourceTree = "<group>";
-		};
-		66281C8D46BDF785D6E012A4 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				F473FBAFD011FB3187700C71 /* urg_library */,
-			);
-			name = libs;
-			sourceTree = "<group>";
-		};
-		6948EE371B920CB800B5AC1A /* local_addons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = local_addons;
-			sourceTree = "<group>";
-		};
-		6E74489959DDAB8B03123BC1 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				B4C7619462D8DBFEC72B9230 /* ofxUrg.h */,
-				46933BD622C2311300D06D9B /* ofxUrg.cpp */,
-			);
-			name = src;
-			sourceTree = "<group>";
-		};
-		BB4B014C10F69532006C3DED /* addons */ = {
-			isa = PBXGroup;
-			children = (
-				D2AB221E7B134D8D24C7F71B /* ofxUrg */,
-			);
-			name = addons;
-			sourceTree = "<group>";
-		};
-		D2AB221E7B134D8D24C7F71B /* ofxUrg */ = {
-			isa = PBXGroup;
-			children = (
-				6E74489959DDAB8B03123BC1 /* src */,
-				66281C8D46BDF785D6E012A4 /* libs */,
-			);
-			name = ofxUrg;
-			sourceTree = "<group>";
-		};
-		E4328144138ABC890047C5CB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E4B69B4A0A3A1720003C02F2 = {
-			isa = PBXGroup;
-			children = (
-				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
-				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
-				E4B69E1C0A3A1BDC003C02F2 /* src */,
-				E4EEC9E9138DF44700A80321 /* openFrameworks */,
-				BB4B014C10F69532006C3DED /* addons */,
-				6948EE371B920CB800B5AC1A /* local_addons */,
-				E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */,
-			);
-			sourceTree = "<group>";
-		};
-		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
-			);
-			path = src;
-			sourceTree = SOURCE_ROOT;
-		};
-		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
-				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
-			);
-			name = openFrameworks;
-			sourceTree = "<group>";
-		};
-		F473FBAFD011FB3187700C71 /* urg_library */ = {
-			isa = PBXGroup;
-			children = (
-				65181AB4D0C9ABB18E8CFD09 /* include */,
-			);
-			name = urg_library;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		E4B69B5A0A3A1756003C02F2 /* example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */;
-			buildPhases = (
-				E4B69B580A3A1756003C02F2 /* Sources */,
-				E4B69B590A3A1756003C02F2 /* Frameworks */,
-				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
-				E4C2427710CC5ABF004149E2 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
-			);
-			name = example;
-			productName = myOFApp;
-			productReference = E4B69B5B0A3A1756003C02F2 /* exampleDebug.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0600;
-			};
-			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
-			);
-			mainGroup = E4B69B4A0A3A1720003C02F2;
-			productRefGroup = E4B69B4A0A3A1720003C02F2;
-			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E4328144138ABC890047C5CB /* Products */;
-					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
-				},
-			);
-			projectRoot = "";
-			targets = (
-				E4B69B5A0A3A1756003C02F2 /* example */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = openFrameworksDebug.a;
-			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy default icon file into App/Resources\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n# Copy libfmod and change install directory for fmod to run\nrsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\";\ninstall_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n# Copy GLUT framework (must remove for AppStore submissions)\nrsync -aved ../../../libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		E4B69B580A3A1756003C02F2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46933BD722C2311300D06D9B /* ofxUrg.cpp in Sources */,
-				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = openFrameworks;
-			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
-				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
-				GCC_AUTO_VECTORIZATION = YES;
-				GCC_ENABLE_SSE3_EXTENSIONS = YES;
-				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
-				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
-				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
-				GCC_WARN_UNINITIALIZED_AUTOS = NO;
-				GCC_WARN_UNUSED_VALUE = NO;
-				GCC_WARN_UNUSED_VARIABLE = NO;
-				HEADER_SEARCH_PATHS = (
+	"archiveVersion": "1",
+	"classes": {},
+	"objectVersion": "54",
+	"objects": {
+		"001238E2-BB34-4FC9-9989-7EBB3D797E27": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial_utils_windows.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_utils_windows.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"077C0172-62E2-4EE9-8D25-F816F5496388": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "Urg_driver.cpp",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/Urg_driver.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"0C286D70-CA62-41FA-8ADB-A61463351314": {
+			"fileRef": "C890D1F8-41F2-45D3-83BD-0673A553B67A",
+			"isa": "PBXBuildFile"
+		},
+		"12CE32BE-402C-47DF-84AB-A29ED4119EF0": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_utils.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_utils.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"17CD60B2-4DE3-4C2E-B05F-EBF58C2F0B65": {
+			"fileRef": "209D6777-0A27-48BA-AE77-0313E2F7B57D",
+			"isa": "PBXBuildFile"
+		},
+		"191CD6FA2847E21E0085CBB6": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.plist.entitlements",
+			"path": "of.entitlements",
+			"sourceTree": "<group>"
+		},
+		"191EF70929D778A400F35F26": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "folder",
+			"name": "openFrameworks",
+			"path": "../../../libs/openFrameworks",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"19B789C429E5AB4A0082E9B8": {
+			"buildActionMask": "2147483647",
+			"files": [],
+			"inputFileListPaths": [],
+			"inputPaths": [],
+			"isa": "PBXShellScriptBuildPhase",
+			"outputFileListPaths": [],
+			"outputPaths": [],
+			"runOnlyForDeploymentPostprocessing": "0",
+			"shellPath": "/bin/sh",
+			"shellScript": "\"$OF_PATH/scripts/osx/xcode_project.sh\"\n",
+			"showEnvVarsInLog": "0"
+		},
+		"209D6777-0A27-48BA-AE77-0313E2F7B57D": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"212E6B13-AFC1-487F-A90C-3B7530706F6B": {
+			"fileRef": "001238E2-BB34-4FC9-9989-7EBB3D797E27",
+			"isa": "PBXBuildFile"
+		},
+		"26B3F4FD-EA5B-4BBE-826C-7FF8599315FB": {
+			"fileRef": "A6D486DE-B84F-42D5-8768-DA7821DE2CC4",
+			"isa": "PBXBuildFile"
+		},
+		"272DC855-87E5-4C45-83B3-7B02E69FAE65": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_ring_buffer.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_ring_buffer.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2EE5B397-7671-4583-BAC1-419AE58515F0": {
+			"fileRef": "733D302C-EEAC-461F-B768-D830EA08C8C0",
+			"isa": "PBXBuildFile"
+		},
+		"319A0E03-8908-4D70-AC2D-0D78F2021B67": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_debug.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_debug.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3243B10D-DB34-4DED-8840-0B349CFC1707": {
+			"fileRef": "F723ACE9-A133-4938-84CC-BF9138E3C3EC",
+			"isa": "PBXBuildFile"
+		},
+		"37114CFE-03FA-456C-B223-7C824D7CC4EB": {
+			"fileRef": "272DC855-87E5-4C45-83B3-7B02E69FAE65",
+			"isa": "PBXBuildFile"
+		},
+		"3D12EA14-54DF-461A-B8A0-299D44C6C29C": {
+			"fileRef": "922D6713-EF81-4219-997C-ED014DD708B2",
+			"isa": "PBXBuildFile"
+		},
+		"4693D0C4-8EC5-4973-ADB7-DCE520662D18": {
+			"fileRef": "E16035AE-0E75-4A74-91E5-97E5307C4D43",
+			"isa": "PBXBuildFile"
+		},
+		"4D3EB1CA-92E4-48AB-90A9-10A0F2471970": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_errno.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_errno.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"4D48D952-2CC4-436E-89F7-F3E851F1CF41": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_serial.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"53528187-8404-4D90-9559-C9BDB51800CC": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial_linux.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_linux.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"54362DF6-D7B1-4A1F-BB43-27ED6FB9D132": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial_utils.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_serial_utils.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"5846AEA6-CB77-444B-933A-5D5DBAA9F9A4": {
+			"children": [
+				"6C50156E-120A-466B-8AE9-064CCBB8371B",
+				"9E68F79C-973F-4A87-AD9A-E2F766DF5C6D"
+			],
+			"isa": "PBXGroup",
+			"name": "urg_library",
+			"path": "../../../addons/ofxUrg/libs/urg_library",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"5A8CAD69-14E8-4A42-A533-51B1B9904982": {
+			"fileRef": "077C0172-62E2-4EE9-8D25-F816F5496388",
+			"isa": "PBXBuildFile"
+		},
+		"5F344579-F4C9-4B47-85AD-68691E605679": {
+			"fileRef": "CC1E14F6-CC86-4E66-B2CF-98782B668564",
+			"isa": "PBXBuildFile"
+		},
+		"615C0485-F895-4EAB-8706-151C2775276F": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "Lidar.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/Lidar.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"68C8F18B-E10C-4923-BF83-E28EB4601B73": {
+			"fileRef": "53528187-8404-4D90-9559-C9BDB51800CC",
+			"isa": "PBXBuildFile"
+		},
+		"6C50156E-120A-466B-8AE9-064CCBB8371B": {
+			"children": [
+				"615C0485-F895-4EAB-8706-151C2775276F",
+				"F146162A-9DF3-473E-B183-6A5F9BAD6CE9",
+				"78A3D156-AD78-4298-9B00-2E9B2D19D166",
+				"E307B951-410A-4790-AA3D-20C0119E94E9",
+				"72EE40FC-9EEE-4583-B68E-BEC40C59FD3E",
+				"F6C64D49-6793-4FE3-8019-C0854C4242EC",
+				"E717FA14-88D6-4301-A407-16614D991C8C",
+				"85E895CB-AE72-49C1-96C9-4F41E104EA0E",
+				"4D3EB1CA-92E4-48AB-90A9-10A0F2471970",
+				"9B8F183F-66CA-4654-B6FF-B179C9B8003F",
+				"E7F1D493-42C3-4C21-8122-DB83184303CF",
+				"4D48D952-2CC4-436E-89F7-F3E851F1CF41",
+				"54362DF6-D7B1-4A1F-BB43-27ED6FB9D132",
+				"B5469038-E2F2-4030-B880-301E0C758C8D",
+				"12CE32BE-402C-47DF-84AB-A29ED4119EF0"
+			],
+			"isa": "PBXGroup",
+			"name": "include",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"72EE40FC-9EEE-4583-B68E-BEC40C59FD3E": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ticks.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/ticks.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"733D302C-EEAC-461F-B768-D830EA08C8C0": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial_utils_linux.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_utils_linux.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"75821768-4EB9-48BD-B7B0-B464D8AC0759": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial_utils.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_utils.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"78A3D156-AD78-4298-9B00-2E9B2D19D166": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "detect_os.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/detect_os.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7D1FE80C-A114-4CFB-877A-2881FA8D7104": {
+			"fileRef": "319A0E03-8908-4D70-AC2D-0D78F2021B67",
+			"isa": "PBXBuildFile"
+		},
+		"85E895CB-AE72-49C1-96C9-4F41E104EA0E": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_detect_os.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_detect_os.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"922D6713-EF81-4219-997C-ED014DD708B2": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ticks.cpp",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/ticks.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"99418EE1-C921-4157-A205-7350530E1487": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxUrg.h",
+			"path": "../../../addons/ofxUrg/src/ofxUrg.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"9B8F183F-66CA-4654-B6FF-B179C9B8003F": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_ring_buffer.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_ring_buffer.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"9E68F79C-973F-4A87-AD9A-E2F766DF5C6D": {
+			"children": [
+				"077C0172-62E2-4EE9-8D25-F816F5496388",
+				"922D6713-EF81-4219-997C-ED014DD708B2",
+				"E16035AE-0E75-4A74-91E5-97E5307C4D43",
+				"319A0E03-8908-4D70-AC2D-0D78F2021B67",
+				"272DC855-87E5-4C45-83B3-7B02E69FAE65",
+				"A6D486DE-B84F-42D5-8768-DA7821DE2CC4",
+				"209D6777-0A27-48BA-AE77-0313E2F7B57D",
+				"53528187-8404-4D90-9559-C9BDB51800CC",
+				"75821768-4EB9-48BD-B7B0-B464D8AC0759",
+				"733D302C-EEAC-461F-B768-D830EA08C8C0",
+				"001238E2-BB34-4FC9-9989-7EBB3D797E27",
+				"CC1E14F6-CC86-4E66-B2CF-98782B668564",
+				"C890D1F8-41F2-45D3-83BD-0673A553B67A",
+				"DB947593-7927-4FA6-9793-ED21F39E3EA3"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A6D486DE-B84F-42D5-8768-DA7821DE2CC4": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_sensor.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_sensor.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B5469038-E2F2-4030-B880-301E0C758C8D": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_tcpclient.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_tcpclient.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"BB4B014C10F69532006C3DED": {
+			"children": [
+				"C37CF9AF-180B-4A5D-BB09-E0687D4DC9B0"
+			],
+			"isa": "PBXGroup",
+			"name": "addons",
+			"path": "../../../addons",
+			"sourceTree": "<group>"
+		},
+		"BFCF3F09-686B-4CB7-A025-DBD6BED2299A": {
+			"children": [
+				"5846AEA6-CB77-444B-933A-5D5DBAA9F9A4"
+			],
+			"isa": "PBXGroup",
+			"name": "libs",
+			"path": "../../../addons/ofxUrg/libs",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C37CF9AF-180B-4A5D-BB09-E0687D4DC9B0": {
+			"children": [
+				"BFCF3F09-686B-4CB7-A025-DBD6BED2299A",
+				"E5117FC7-CEB1-440E-AFB4-5276E2AB292F"
+			],
+			"isa": "PBXGroup",
+			"name": "ofxUrg",
+			"path": "../../../addons/ofxUrg",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C890D1F8-41F2-45D3-83BD-0673A553B67A": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_tcpclient.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_tcpclient.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"CC1E14F6-CC86-4E66-B2CF-98782B668564": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial_windows.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_windows.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"DB947593-7927-4FA6-9793-ED21F39E3EA3": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_utils.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_utils.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"DBD26905-43B5-4958-B528-1C8B77D57EE7": {
+			"fileRef": "75821768-4EB9-48BD-B7B0-B464D8AC0759",
+			"isa": "PBXBuildFile"
+		},
+		"E16035AE-0E75-4A74-91E5-97E5307C4D43": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_connection.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_connection.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E307B951-410A-4790-AA3D-20C0119E94E9": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "math_utilities.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/math_utilities.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E42962A92163ECCD00A6A9E2": {
+			"alwaysOutOfDate": "1",
+			"buildActionMask": "2147483647",
+			"files": [],
+			"inputPaths": [],
+			"isa": "PBXShellScriptBuildPhase",
+			"name": "Run Script — Compile OF",
+			"outputPaths": [],
+			"runOnlyForDeploymentPostprocessing": "0",
+			"shellPath": "/bin/sh",
+			"shellScript": "echo \"💾 Compiling Openframeworks\"\nxcodebuild -project \"$OF_PATH/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj\" -target openFrameworks -configuration \"${CONFIGURATION}\"  CLANG_CXX_LANGUAGE_STANDARD=$CLANG_CXX_LANGUAGE_STANDARD MACOSX_DEPLOYMENT_TARGET=$MACOSX_DEPLOYMENT_TARGET GCC_PREPROCESSOR_DEFINITIONS=$USER_PREPROCESSOR_DEFINITIONS\n",
+			"showEnvVarsInLog": "0"
+		},
+		"E4A5B60F29BAAAE400C2D356": {
+			"buildActionMask": "2147483647",
+			"dstPath": "",
+			"dstSubfolderSpec": "6",
+			"files": [],
+			"isa": "PBXCopyFilesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B4A0A3A1720003C02F2": {
+			"children": [
+				"191CD6FA2847E21E0085CBB6",
+				"E4B6FCAD0C3E899E008CF71C",
+				"E4EB6923138AFD0F00A09F29",
+				"E4B69E1C0A3A1BDC003C02F2",
+				"191EF70929D778A400F35F26",
+				"BB4B014C10F69532006C3DED",
+				"E4B69B5B0A3A1756003C02F2"
+			],
+			"isa": "PBXGroup",
+			"sourceTree": "<group>"
+		},
+		"E4B69B4C0A3A1720003C02F2": {
+			"attributes": {
+				"LastUpgradeCheck": "0600"
+			},
+			"buildConfigurationList": "E4B69B4D0A3A1720003C02F2",
+			"compatibilityVersion": "Xcode 3.2",
+			"developmentRegion": "en",
+			"hasScannedForEncodings": "0",
+			"isa": "PBXProject",
+			"knownRegions": [
+				"en",
+				"Base"
+			],
+			"mainGroup": "E4B69B4A0A3A1720003C02F2",
+			"productRefGroup": "E4B69B4A0A3A1720003C02F2",
+			"projectDirPath": "",
+			"projectRoot": "",
+			"targets": [
+				"E4B69B5A0A3A1756003C02F2"
+			]
+		},
+		"E4B69B4D0A3A1720003C02F2": {
+			"buildConfigurations": [
+				"E4B69B4E0A3A1720003C02F2",
+				"E4B69B4F0A3A1720003C02F2"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"E4B69B4E0A3A1720003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"CODE_SIGN_ENTITLEMENTS": "of.entitlements",
+				"COPY_PHASE_STRIP": "NO",
+				"ENABLE_TESTABILITY": "YES",
+				"GCC_OPTIMIZATION_LEVEL": "0",
+				"GCC_WARN_UNUSED_VARIABLE": "NO",
+				"HEADER_SEARCH_PATHS": [
 					"$(OF_CORE_HEADERS)",
-					src,
-					../../../addons/ofxUrg/libs,
-					../../../addons/ofxUrg/libs/urg_library,
-					../../../addons/ofxUrg/libs/urg_library/include,
-					../../../addons/ofxUrg/libs/urg_library/lib,
-					../../../addons/ofxUrg/libs/urg_library/lib/osx,
-					../../../addons/ofxUrg/src,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-D__MACOSX_CORE__",
-					"-mtune=native",
-				);
-				OTHER_LDFLAGS = (
-					"$(OF_CORE_FRAMEWORKS)",
-					"$(OF_CORE_LIBS)",
-					../../../addons/ofxUrg/libs/urg_library/lib/osx/liburg_cpp.a,
-				);
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		E4B69B4F0A3A1720003C02F2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
-				COPY_PHASE_STRIP = YES;
-				DEAD_CODE_STRIPPING = YES;
-				GCC_AUTO_VECTORIZATION = YES;
-				GCC_ENABLE_SSE3_EXTENSIONS = YES;
-				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_UNROLL_LOOPS = YES;
-				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
-				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
-				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
-				GCC_WARN_UNINITIALIZED_AUTOS = NO;
-				GCC_WARN_UNUSED_VALUE = NO;
-				GCC_WARN_UNUSED_VARIABLE = NO;
-				HEADER_SEARCH_PATHS = (
+					"src"
+				],
+				"OTHER_CPLUSPLUSFLAGS": "-D__MACOSX_CORE__"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"E4B69B4F0A3A1720003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"CODE_SIGN_ENTITLEMENTS": "of.entitlements",
+				"COPY_PHASE_STRIP": "YES",
+				"GCC_OPTIMIZATION_LEVEL": "3",
+				"GCC_UNROLL_LOOPS": "YES",
+				"HEADER_SEARCH_PATHS": [
 					"$(OF_CORE_HEADERS)",
-					src,
-					../../../addons/ofxUrg/libs,
-					../../../addons/ofxUrg/libs/urg_library,
-					../../../addons/ofxUrg/libs/urg_library/include,
-					../../../addons/ofxUrg/libs/urg_library/lib,
-					../../../addons/ofxUrg/libs/urg_library/lib/osx,
-					../../../addons/ofxUrg/src,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-D__MACOSX_CORE__",
-					"-mtune=native",
-				);
-				OTHER_LDFLAGS = (
-					"$(OF_CORE_FRAMEWORKS)",
-					"$(OF_CORE_LIBS)",
-					../../../addons/ofxUrg/libs/urg_library/lib/osx/liburg_cpp.a,
-				);
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		E4B69B600A3A1757003C02F2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_MODEL_TUNING = NONE;
-				HEADER_SEARCH_PATHS = (
+					"src"
+				],
+				"OTHER_CPLUSPLUSFLAGS": "-D__MACOSX_CORE__"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"E4B69B580A3A1756003C02F2": {
+			"buildActionMask": "2147483647",
+			"files": [
+				"E4B69E200A3A1BDC003C02F2",
+				"E4B69E210A3A1BDC003C02F2",
+				"5A8CAD69-14E8-4A42-A533-51B1B9904982",
+				"3D12EA14-54DF-461A-B8A0-299D44C6C29C",
+				"4693D0C4-8EC5-4973-ADB7-DCE520662D18",
+				"7D1FE80C-A114-4CFB-877A-2881FA8D7104",
+				"37114CFE-03FA-456C-B223-7C824D7CC4EB",
+				"26B3F4FD-EA5B-4BBE-826C-7FF8599315FB",
+				"17CD60B2-4DE3-4C2E-B05F-EBF58C2F0B65",
+				"68C8F18B-E10C-4923-BF83-E28EB4601B73",
+				"DBD26905-43B5-4958-B528-1C8B77D57EE7",
+				"2EE5B397-7671-4583-BAC1-419AE58515F0",
+				"212E6B13-AFC1-487F-A90C-3B7530706F6B",
+				"5F344579-F4C9-4B47-85AD-68691E605679",
+				"0C286D70-CA62-41FA-8ADB-A61463351314",
+				"EAE1324A-8A7B-4ACF-92BB-A3A0CE15CE3A",
+				"3243B10D-DB34-4DED-8840-0B349CFC1707"
+			],
+			"isa": "PBXSourcesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B590A3A1756003C02F2": {
+			"buildActionMask": "2147483647",
+			"files": [],
+			"isa": "PBXFrameworksBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B5A0A3A1756003C02F2": {
+			"buildConfigurationList": "E4B69B5F0A3A1757003C02F2",
+			"buildPhases": [
+				"E42962A92163ECCD00A6A9E2",
+				"E4B69B580A3A1756003C02F2",
+				"E4B69B590A3A1756003C02F2",
+				"E4C2427710CC5ABF004149E2",
+				"E4A5B60F29BAAAE400C2D356",
+				"19B789C429E5AB4A0082E9B8"
+			],
+			"buildRules": [],
+			"dependencies": [],
+			"isa": "PBXNativeTarget",
+			"name": "example",
+			"productName": "myOFApp",
+			"productReference": "E4B69B5B0A3A1756003C02F2",
+			"productType": "com.apple.product-type.application"
+		},
+		"E4B69B5B0A3A1756003C02F2": {
+			"explicitFileType": "wrapper.application",
+			"includeInIndex": "0",
+			"isa": "PBXFileReference",
+			"path": "exampleDebug.app",
+			"sourceTree": "BUILT_PRODUCTS_DIR"
+		},
+		"E4B69B5F0A3A1757003C02F2": {
+			"buildConfigurations": [
+				"E4B69B600A3A1757003C02F2",
+				"E4B69B610A3A1757003C02F2"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"E4B69B600A3A1757003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"ARCHS": "$(ARCHS_STANDARD)",
+				"COPY_PHASE_STRIP": "NO",
+				"FRAMEWORK_SEARCH_PATHS": "$(inherited)",
+				"GCC_DYNAMIC_NO_PIC": "NO",
+				"HEADER_SEARCH_PATHS": [
 					"$(OF_CORE_HEADERS)",
-					src,
-					../../../addons/ofxUrg/libs,
-					../../../addons/ofxUrg/libs/urg_library,
-					../../../addons/ofxUrg/libs/urg_library/include,
-					../../../addons/ofxUrg/libs/urg_library/lib,
-					../../../addons/ofxUrg/libs/urg_library/lib/osx,
-					../../../addons/ofxUrg/src,
-				);
-				ICON = "$(ICON_NAME_DEBUG)";
-				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
-				INFOPLIST_FILE = "openFrameworks-Info.plist";
-				INSTALL_PATH = /Applications;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OF_CORE_FRAMEWORKS = "-framework Accelerate -framework AGL -framework AppKit -framework ApplicationServices -framework AudioToolbox -framework AVFoundation -framework Cocoa -framework CoreAudio -framework CoreFoundation -framework CoreMedia -framework CoreServices -framework CoreVideo -framework IOKit -framework OpenGL -framework QuartzCore -framework QTKit -framework GLUT";
-				OTHER_LDFLAGS = (
-					"$(OF_CORE_FRAMEWORKS)",
+					"src",
+					"src",
+					"../../../addons/ofxUrg/libs",
+					"../../../addons/ofxUrg/libs/urg_library",
+					"../../../addons/ofxUrg/libs/urg_library/include",
+					"../../../addons/ofxUrg/libs/urg_library/src",
+					"../../../addons/ofxUrg/src"
+				],
+				"LIBRARY_SEARCH_PATHS": "$(inherited)",
+				"OTHER_LDFLAGS": [
 					"$(OF_CORE_LIBS)",
-					../../../addons/ofxUrg/libs/urg_library/lib/osx/liburg_cpp.a,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)Debug";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		E4B69B610A3A1757003C02F2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_MODEL_TUNING = NONE;
-				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF_DEBUG)"
+				]
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"E4B69B610A3A1757003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"ARCHS": "$(ARCHS_STANDARD)",
+				"COPY_PHASE_STRIP": "YES",
+				"FRAMEWORK_SEARCH_PATHS": "$(inherited)",
+				"HEADER_SEARCH_PATHS": [
 					"$(OF_CORE_HEADERS)",
-					src,
-					../../../addons/ofxUrg/libs,
-					../../../addons/ofxUrg/libs/urg_library,
-					../../../addons/ofxUrg/libs/urg_library/include,
-					../../../addons/ofxUrg/libs/urg_library/lib,
-					../../../addons/ofxUrg/libs/urg_library/lib/osx,
-					../../../addons/ofxUrg/src,
-				);
-				ICON = "$(ICON_NAME_RELEASE)";
-				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
-				INFOPLIST_FILE = "openFrameworks-Info.plist";
-				INSTALL_PATH = /Applications;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OF_CORE_FRAMEWORKS = "-framework Accelerate -framework AGL -framework AppKit -framework ApplicationServices -framework AudioToolbox -framework AVFoundation -framework Cocoa -framework CoreAudio -framework CoreFoundation -framework CoreMedia -framework CoreServices -framework CoreVideo -framework IOKit -framework OpenGL -framework QuartzCore -framework QTKit -framework GLUT";
-				OTHER_LDFLAGS = (
-					"$(OF_CORE_FRAMEWORKS)",
+					"src",
+					"src",
+					"../../../addons/ofxUrg/libs",
+					"../../../addons/ofxUrg/libs/urg_library",
+					"../../../addons/ofxUrg/libs/urg_library/include",
+					"../../../addons/ofxUrg/libs/urg_library/src",
+					"../../../addons/ofxUrg/src"
+				],
+				"LIBRARY_SEARCH_PATHS": "$(inherited)",
+				"OTHER_LDFLAGS": [
 					"$(OF_CORE_LIBS)",
-					../../../addons/ofxUrg/libs/urg_library/lib/osx/liburg_cpp.a,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E4B69B4E0A3A1720003C02F2 /* Debug */,
-				E4B69B4F0A3A1720003C02F2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E4B69B600A3A1757003C02F2 /* Debug */,
-				E4B69B610A3A1757003C02F2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF)"
+				],
+				"baseConfigurationReference": "E4EB6923138AFD0F00A09F29"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"E4B69E1C0A3A1BDC003C02F2": {
+			"children": [
+				"E4B69E1D0A3A1BDC003C02F2",
+				"E4B69E1E0A3A1BDC003C02F2",
+				"E4B69E1F0A3A1BDC003C02F2"
+			],
+			"isa": "PBXGroup",
+			"path": "src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1D0A3A1BDC003C02F2": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.cpp",
+			"name": "main.cpp",
+			"path": "src/main.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1E0A3A1BDC003C02F2": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofApp.cpp",
+			"path": "src/ofApp.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1F0A3A1BDC003C02F2": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.c.h",
+			"name": "ofApp.h",
+			"path": "src/ofApp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E200A3A1BDC003C02F2": {
+			"fileRef": "E4B69E1D0A3A1BDC003C02F2",
+			"isa": "PBXBuildFile"
+		},
+		"E4B69E210A3A1BDC003C02F2": {
+			"fileRef": "E4B69E1E0A3A1BDC003C02F2",
+			"isa": "PBXBuildFile"
+		},
+		"E4B6FCAD0C3E899E008CF71C": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.plist.xml",
+			"path": "openFrameworks-Info.plist",
+			"sourceTree": "<group>"
+		},
+		"E4C2427710CC5ABF004149E2": {
+			"buildActionMask": "2147483647",
+			"dstPath": "",
+			"dstSubfolderSpec": "10",
+			"files": [],
+			"isa": "PBXCopyFilesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4EB6923138AFD0F00A09F29": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.xcconfig",
+			"path": "Project.xcconfig",
+			"sourceTree": "<group>"
+		},
+		"E5117FC7-CEB1-440E-AFB4-5276E2AB292F": {
+			"children": [
+				"F723ACE9-A133-4938-84CC-BF9138E3C3EC",
+				"99418EE1-C921-4157-A205-7350530E1487"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxUrg/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E717FA14-88D6-4301-A407-16614D991C8C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_debug.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_debug.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E7F1D493-42C3-4C21-8122-DB83184303CF": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_sensor.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_sensor.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"EAE1324A-8A7B-4ACF-92BB-A3A0CE15CE3A": {
+			"fileRef": "DB947593-7927-4FA6-9793-ED21F39E3EA3",
+			"isa": "PBXBuildFile"
+		},
+		"F146162A-9DF3-473E-B183-6A5F9BAD6CE9": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "Urg_driver.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/Urg_driver.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F6C64D49-6793-4FE3-8019-C0854C4242EC": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_connection.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_connection.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F723ACE9-A133-4938-84CC-BF9138E3C3EC": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxUrg.cpp",
+			"path": "../../../addons/ofxUrg/src/ofxUrg.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		}
+	},
+	"openFrameworksProjectGeneratorVersion": "21",
+	"rootObject": "E4B69B4C0A3A1720003C02F2"
 }
