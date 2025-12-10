@@ -10,7 +10,8 @@
   $Id$
 */
 
-#if defined(URG_WINDOWS_OS)
+#include "urg_detect_os.h"
+#ifndef URG_MAC_OS
 
 #include "urg_serial.h"
 #include <stdio.h>

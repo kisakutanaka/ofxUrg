@@ -10,6 +10,9 @@
   $Id$
 */
 
+#include "urg_detect_os.h"
+#ifndef URG_MAC_OS
+
 #include "urg_serial.h"
 
 
@@ -72,3 +75,5 @@ int serial_readline(urg_serial_t *serial, char *data, int max_size, int timeout)
         return filled;
     }
 }
+
+#endif

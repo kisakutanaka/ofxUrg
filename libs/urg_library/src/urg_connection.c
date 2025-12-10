@@ -21,7 +21,9 @@ int connection_open(urg_connection_t *connection,
 
     switch (connection_type) {
     case URG_SERIAL:
+#ifndef URG_MAC_OS
         return serial_open(&connection->serial, device, baudrate_or_port);
+#endif
         break;
 
     case URG_ETHERNET:
@@ -37,7 +39,9 @@ void connection_close(urg_connection_t *connection)
 {
     switch (connection->type) {
     case URG_SERIAL:
+#ifndef URG_MAC_OS
         serial_close(&connection->serial);
+#endif
         break;
 
     case URG_ETHERNET:
@@ -53,7 +57,9 @@ int connection_set_baudrate(urg_connection_t *connection, long baudrate)
 
     switch (connection->type) {
     case URG_SERIAL:
+#ifndef URG_MAC_OS
         ret = serial_set_baudrate(&connection->serial, baudrate);
+#endif
         break;
 
     case URG_ETHERNET:
@@ -70,7 +76,9 @@ int connection_write(urg_connection_t *connection,
 {
     switch (connection->type) {
     case URG_SERIAL:
+#ifndef URG_MAC_OS
         return serial_write(&connection->serial, data, size);
+#endif
         break;
     case URG_ETHERNET:
         return tcpclient_write(&connection->tcpclient, data, size);
@@ -85,7 +93,9 @@ int connection_read(urg_connection_t *connection,
 {
     switch (connection->type) {
     case URG_SERIAL:
+#ifndef URG_MAC_OS
         return serial_read(&connection->serial, data, max_size, timeout);
+#endif
         break;
     case URG_ETHERNET:
         return tcpclient_read(&connection->tcpclient, data, max_size, timeout);
@@ -100,7 +110,9 @@ int connection_readline(urg_connection_t *connection,
 {
     switch (connection->type) {
     case URG_SERIAL:
+#ifndef URG_MAC_OS
         return serial_readline(&connection->serial, data, max_size, timeout);
+#endif
         break;
     case URG_ETHERNET:
         return tcpclient_readline(&connection->tcpclient,

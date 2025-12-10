@@ -53,7 +53,9 @@ typedef enum {
 typedef struct
 {
     urg_connection_type_t type; //!< \~japanese 接続タイプ  \~english Type of connection
+#ifndef URG_MAC_OS
     urg_serial_t serial;        //!< \~japanese シリアル接続 \~english Serial connection
+#endif
     urg_tcpclient_t tcpclient;  //!< \~japanese イーサーネット接続 \~english Ethernet connection
 } urg_connection_t;
 

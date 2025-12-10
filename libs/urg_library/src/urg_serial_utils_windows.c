@@ -16,9 +16,11 @@
   \todo Fix the code to be C90 compliant, but keeping the "//" comments
 */
 
-#if defined(URG_WINDOWS_OS)
 #include "urg_serial_utils.h"
+
 #include "urg_detect_os.h"
+#ifndef URG_MAC_OS
+
 #include <windows.h>
 #include <setupapi.h>
 #include <string.h>

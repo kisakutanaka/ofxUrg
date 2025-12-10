@@ -1,8 +1,39 @@
 #include "ofApp.h"
 
+void ofApp::Instance::setup(string osc_prefix)
+{
+    device = make_shared<ofxUrg::Processor>();
+    auto& urg = *device;
+    
+    urg.setMode(ofxUrg::DISTANCE_INTENSITY);
+    urg.setupEthernet(this->ip);
+
+#ifdef RZM_DEV
+    urg.scale =1.0;
+#endif
+    
+    ofLogNotice("Product", urg.productType());
+    ofLogNotice("Serial", urg.serialId());
+    ofLogNotice("Status", urg.status());
+    ofLogNotice("State", urg.state());
+    ofLogNotice("Firmware version", urg.firmwareVersion());
+    
+    urg.start();
+}
+
+void ofApp::Instance::update()
+{
+    device->update();
+}
+
+
+
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+    for (int i=0; i<instances.size(); ++i) {
+        auto& ins = instances[i];
+        ins.setup("/lidar" + ofToString(i));
+    }
 }
 
 //--------------------------------------------------------------

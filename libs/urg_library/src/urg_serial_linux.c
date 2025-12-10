@@ -9,9 +9,12 @@
   $Id$
 */
 
-#ifdef QRK_MAC_OS
 
 #include "urg_ring_buffer.h"
+
+#include "urg_detect_os.h"
+#ifndef URG_MAC_OS
+
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/types.h>
