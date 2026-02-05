@@ -3,36 +3,67 @@
 	"classes": {},
 	"objectVersion": "54",
 	"objects": {
-		"001238E2-BB34-4FC9-9989-7EBB3D797E27": {
-			"explicitFileType": "sourcecode.c.c",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_serial_utils_windows.c",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_utils_windows.c",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"077C0172-62E2-4EE9-8D25-F816F5496388": {
-			"explicitFileType": "sourcecode.cpp.cpp",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "Urg_driver.cpp",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src/Urg_driver.cpp",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"0C286D70-CA62-41FA-8ADB-A61463351314": {
-			"fileRef": "C890D1F8-41F2-45D3-83BD-0673A553B67A",
+		"01B38BC8-FAD1-4B3D-A1D4-4C3CD9F54BCF": {
+			"fileRef": "7AA980D9-E811-4802-A38A-BB65A486507B",
 			"isa": "PBXBuildFile"
 		},
-		"12CE32BE-402C-47DF-84AB-A29ED4119EF0": {
+		"04B587F1-1C2D-4E48-9344-E7123F523073": {
+			"children": [
+				"E3DCE0FC-AEB5-48D0-94BD-29C2DA9DE172",
+				"8A43CD18-7E5D-41D8-8E8B-9F5EBF6D3944",
+				"1D63D09D-DD57-4918-B306-2D93E8026972",
+				"2B396D6E-7BD6-4B43-A4AB-A7CAFCD54DAD",
+				"10C3BA8E-26E2-417D-BDBF-CF3345AD62C7",
+				"AFA2B307-CBB8-40AD-AB8F-ED2B30473B94",
+				"C84E3B81-7BC9-4CA7-B80A-0469562148D8",
+				"3528D080-FAE5-42EF-B0A1-6AECAD3FE18B",
+				"7AA980D9-E811-4802-A38A-BB65A486507B",
+				"0E789712-035A-4FE2-B835-040C530F141F",
+				"C3DB46A6-1E3E-4E76-AE9D-125AE5E15668",
+				"A626575A-B201-45B9-BA09-FACA8A62A94A",
+				"A92CB83F-C463-423E-9B82-CCA495AE1D31",
+				"E3EA2F9D-0E58-458D-88A5-36C74B11FBF6"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"0E01024D-2DA2-4607-83A1-88D039192EAA": {
 			"explicitFileType": "sourcecode.c.h",
 			"fileEncoding": "4",
 			"isa": "PBXFileReference",
-			"name": "urg_utils.h",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_utils.h",
+			"name": "urg_serial_utils.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_serial_utils.h",
 			"sourceTree": "SOURCE_ROOT"
 		},
-		"17CD60B2-4DE3-4C2E-B05F-EBF58C2F0B65": {
-			"fileRef": "209D6777-0A27-48BA-AE77-0313E2F7B57D",
+		"0E789712-035A-4FE2-B835-040C530F141F": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial_utils_linux.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_utils_linux.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"10C3BA8E-26E2-417D-BDBF-CF3345AD62C7": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_ring_buffer.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_ring_buffer.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"1619AC88-2A5F-4AB0-879F-00F3623D8804": {
+			"children": [
+				"8E204BFE-686E-4BF6-A2BE-FB128A1FF029"
+			],
+			"isa": "PBXGroup",
+			"name": "libs",
+			"path": "../../../addons/ofxUrg/libs",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"18D27079-289A-4781-B97D-05B4BB14E6D7": {
+			"fileRef": "AFA2B307-CBB8-40AD-AB8F-ED2B30473B94",
 			"isa": "PBXBuildFile"
 		},
 		"191CD6FA2847E21E0085CBB6": {
@@ -62,180 +93,19 @@
 			"shellScript": "\"$OF_PATH/scripts/osx/xcode_project.sh\"\n",
 			"showEnvVarsInLog": "0"
 		},
-		"209D6777-0A27-48BA-AE77-0313E2F7B57D": {
-			"explicitFileType": "sourcecode.c.c",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_serial.c",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial.c",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"212E6B13-AFC1-487F-A90C-3B7530706F6B": {
-			"fileRef": "001238E2-BB34-4FC9-9989-7EBB3D797E27",
-			"isa": "PBXBuildFile"
-		},
-		"26B3F4FD-EA5B-4BBE-826C-7FF8599315FB": {
-			"fileRef": "A6D486DE-B84F-42D5-8768-DA7821DE2CC4",
-			"isa": "PBXBuildFile"
-		},
-		"272DC855-87E5-4C45-83B3-7B02E69FAE65": {
-			"explicitFileType": "sourcecode.c.c",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_ring_buffer.c",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_ring_buffer.c",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"2EE5B397-7671-4583-BAC1-419AE58515F0": {
-			"fileRef": "733D302C-EEAC-461F-B768-D830EA08C8C0",
-			"isa": "PBXBuildFile"
-		},
-		"319A0E03-8908-4D70-AC2D-0D78F2021B67": {
-			"explicitFileType": "sourcecode.c.c",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_debug.c",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_debug.c",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"3243B10D-DB34-4DED-8840-0B349CFC1707": {
-			"fileRef": "F723ACE9-A133-4938-84CC-BF9138E3C3EC",
-			"isa": "PBXBuildFile"
-		},
-		"37114CFE-03FA-456C-B223-7C824D7CC4EB": {
-			"fileRef": "272DC855-87E5-4C45-83B3-7B02E69FAE65",
-			"isa": "PBXBuildFile"
-		},
-		"3D12EA14-54DF-461A-B8A0-299D44C6C29C": {
-			"fileRef": "922D6713-EF81-4219-997C-ED014DD708B2",
-			"isa": "PBXBuildFile"
-		},
-		"4693D0C4-8EC5-4973-ADB7-DCE520662D18": {
-			"fileRef": "E16035AE-0E75-4A74-91E5-97E5307C4D43",
-			"isa": "PBXBuildFile"
-		},
-		"4D3EB1CA-92E4-48AB-90A9-10A0F2471970": {
+		"1B16CE61-865E-4461-8789-391896B3E21D": {
 			"explicitFileType": "sourcecode.c.h",
 			"fileEncoding": "4",
 			"isa": "PBXFileReference",
-			"name": "urg_errno.h",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_errno.h",
+			"name": "urg_sensor.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_sensor.h",
 			"sourceTree": "SOURCE_ROOT"
 		},
-		"4D48D952-2CC4-436E-89F7-F3E851F1CF41": {
-			"explicitFileType": "sourcecode.c.h",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_serial.h",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_serial.h",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"53528187-8404-4D90-9559-C9BDB51800CC": {
-			"explicitFileType": "sourcecode.c.c",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_serial_linux.c",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_linux.c",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"54362DF6-D7B1-4A1F-BB43-27ED6FB9D132": {
-			"explicitFileType": "sourcecode.c.h",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_serial_utils.h",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_serial_utils.h",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"5846AEA6-CB77-444B-933A-5D5DBAA9F9A4": {
-			"children": [
-				"6C50156E-120A-466B-8AE9-064CCBB8371B",
-				"9E68F79C-973F-4A87-AD9A-E2F766DF5C6D"
-			],
-			"isa": "PBXGroup",
-			"name": "urg_library",
-			"path": "../../../addons/ofxUrg/libs/urg_library",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"5A8CAD69-14E8-4A42-A533-51B1B9904982": {
-			"fileRef": "077C0172-62E2-4EE9-8D25-F816F5496388",
+		"1C0480D8-7BE2-49DE-A054-398ACB350986": {
+			"fileRef": "C3DB46A6-1E3E-4E76-AE9D-125AE5E15668",
 			"isa": "PBXBuildFile"
 		},
-		"5F344579-F4C9-4B47-85AD-68691E605679": {
-			"fileRef": "CC1E14F6-CC86-4E66-B2CF-98782B668564",
-			"isa": "PBXBuildFile"
-		},
-		"615C0485-F895-4EAB-8706-151C2775276F": {
-			"explicitFileType": "sourcecode.c.h",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "Lidar.h",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include/Lidar.h",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"68C8F18B-E10C-4923-BF83-E28EB4601B73": {
-			"fileRef": "53528187-8404-4D90-9559-C9BDB51800CC",
-			"isa": "PBXBuildFile"
-		},
-		"6C50156E-120A-466B-8AE9-064CCBB8371B": {
-			"children": [
-				"615C0485-F895-4EAB-8706-151C2775276F",
-				"F146162A-9DF3-473E-B183-6A5F9BAD6CE9",
-				"78A3D156-AD78-4298-9B00-2E9B2D19D166",
-				"E307B951-410A-4790-AA3D-20C0119E94E9",
-				"72EE40FC-9EEE-4583-B68E-BEC40C59FD3E",
-				"F6C64D49-6793-4FE3-8019-C0854C4242EC",
-				"E717FA14-88D6-4301-A407-16614D991C8C",
-				"85E895CB-AE72-49C1-96C9-4F41E104EA0E",
-				"4D3EB1CA-92E4-48AB-90A9-10A0F2471970",
-				"9B8F183F-66CA-4654-B6FF-B179C9B8003F",
-				"E7F1D493-42C3-4C21-8122-DB83184303CF",
-				"4D48D952-2CC4-436E-89F7-F3E851F1CF41",
-				"54362DF6-D7B1-4A1F-BB43-27ED6FB9D132",
-				"B5469038-E2F2-4030-B880-301E0C758C8D",
-				"12CE32BE-402C-47DF-84AB-A29ED4119EF0"
-			],
-			"isa": "PBXGroup",
-			"name": "include",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"72EE40FC-9EEE-4583-B68E-BEC40C59FD3E": {
-			"explicitFileType": "sourcecode.c.h",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "ticks.h",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include/ticks.h",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"733D302C-EEAC-461F-B768-D830EA08C8C0": {
-			"explicitFileType": "sourcecode.c.c",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_serial_utils_linux.c",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_utils_linux.c",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"75821768-4EB9-48BD-B7B0-B464D8AC0759": {
-			"explicitFileType": "sourcecode.c.c",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_serial_utils.c",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_utils.c",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"78A3D156-AD78-4298-9B00-2E9B2D19D166": {
-			"explicitFileType": "sourcecode.c.h",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "detect_os.h",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include/detect_os.h",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"7D1FE80C-A114-4CFB-877A-2881FA8D7104": {
-			"fileRef": "319A0E03-8908-4D70-AC2D-0D78F2021B67",
-			"isa": "PBXBuildFile"
-		},
-		"85E895CB-AE72-49C1-96C9-4F41E104EA0E": {
+		"1CD85A53-49D0-4758-BBC6-2FDC24D1D8ED": {
 			"explicitFileType": "sourcecode.c.h",
 			"fileEncoding": "4",
 			"isa": "PBXFileReference",
@@ -243,125 +113,7 @@
 			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_detect_os.h",
 			"sourceTree": "SOURCE_ROOT"
 		},
-		"922D6713-EF81-4219-997C-ED014DD708B2": {
-			"explicitFileType": "sourcecode.cpp.cpp",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "ticks.cpp",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src/ticks.cpp",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"99418EE1-C921-4157-A205-7350530E1487": {
-			"explicitFileType": "sourcecode.c.h",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "ofxUrg.h",
-			"path": "../../../addons/ofxUrg/src/ofxUrg.h",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"9B8F183F-66CA-4654-B6FF-B179C9B8003F": {
-			"explicitFileType": "sourcecode.c.h",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_ring_buffer.h",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_ring_buffer.h",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"9E68F79C-973F-4A87-AD9A-E2F766DF5C6D": {
-			"children": [
-				"077C0172-62E2-4EE9-8D25-F816F5496388",
-				"922D6713-EF81-4219-997C-ED014DD708B2",
-				"E16035AE-0E75-4A74-91E5-97E5307C4D43",
-				"319A0E03-8908-4D70-AC2D-0D78F2021B67",
-				"272DC855-87E5-4C45-83B3-7B02E69FAE65",
-				"A6D486DE-B84F-42D5-8768-DA7821DE2CC4",
-				"209D6777-0A27-48BA-AE77-0313E2F7B57D",
-				"53528187-8404-4D90-9559-C9BDB51800CC",
-				"75821768-4EB9-48BD-B7B0-B464D8AC0759",
-				"733D302C-EEAC-461F-B768-D830EA08C8C0",
-				"001238E2-BB34-4FC9-9989-7EBB3D797E27",
-				"CC1E14F6-CC86-4E66-B2CF-98782B668564",
-				"C890D1F8-41F2-45D3-83BD-0673A553B67A",
-				"DB947593-7927-4FA6-9793-ED21F39E3EA3"
-			],
-			"isa": "PBXGroup",
-			"name": "src",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"A6D486DE-B84F-42D5-8768-DA7821DE2CC4": {
-			"explicitFileType": "sourcecode.c.c",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_sensor.c",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_sensor.c",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"B5469038-E2F2-4030-B880-301E0C758C8D": {
-			"explicitFileType": "sourcecode.c.h",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_tcpclient.h",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_tcpclient.h",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"BB4B014C10F69532006C3DED": {
-			"children": [
-				"C37CF9AF-180B-4A5D-BB09-E0687D4DC9B0"
-			],
-			"isa": "PBXGroup",
-			"name": "addons",
-			"path": "../../../addons",
-			"sourceTree": "<group>"
-		},
-		"BFCF3F09-686B-4CB7-A025-DBD6BED2299A": {
-			"children": [
-				"5846AEA6-CB77-444B-933A-5D5DBAA9F9A4"
-			],
-			"isa": "PBXGroup",
-			"name": "libs",
-			"path": "../../../addons/ofxUrg/libs",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"C37CF9AF-180B-4A5D-BB09-E0687D4DC9B0": {
-			"children": [
-				"BFCF3F09-686B-4CB7-A025-DBD6BED2299A",
-				"E5117FC7-CEB1-440E-AFB4-5276E2AB292F"
-			],
-			"isa": "PBXGroup",
-			"name": "ofxUrg",
-			"path": "../../../addons/ofxUrg",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"C890D1F8-41F2-45D3-83BD-0673A553B67A": {
-			"explicitFileType": "sourcecode.c.c",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_tcpclient.c",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_tcpclient.c",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"CC1E14F6-CC86-4E66-B2CF-98782B668564": {
-			"explicitFileType": "sourcecode.c.c",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_serial_windows.c",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_windows.c",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"DB947593-7927-4FA6-9793-ED21F39E3EA3": {
-			"explicitFileType": "sourcecode.c.c",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_utils.c",
-			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_utils.c",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"DBD26905-43B5-4958-B528-1C8B77D57EE7": {
-			"fileRef": "75821768-4EB9-48BD-B7B0-B464D8AC0759",
-			"isa": "PBXBuildFile"
-		},
-		"E16035AE-0E75-4A74-91E5-97E5307C4D43": {
+		"1D63D09D-DD57-4918-B306-2D93E8026972": {
 			"explicitFileType": "sourcecode.c.c",
 			"fileEncoding": "4",
 			"isa": "PBXFileReference",
@@ -369,12 +121,255 @@
 			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_connection.c",
 			"sourceTree": "SOURCE_ROOT"
 		},
-		"E307B951-410A-4790-AA3D-20C0119E94E9": {
+		"251E0345-C587-46C7-90D8-4FBCF7CA3034": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_connection.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_connection.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"26883B32-3F0C-4657-896D-93AAA7A379AD": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ticks.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/ticks.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"26CA6C31-016A-40FF-9EA4-A29A6BA2CD77": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxUrg.cpp",
+			"path": "../../../addons/ofxUrg/src/ofxUrg.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2B396D6E-7BD6-4B43-A4AB-A7CAFCD54DAD": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_debug.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_debug.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2C92D363-825D-4DB7-889A-CCEED80FF762": {
+			"children": [
+				"1619AC88-2A5F-4AB0-879F-00F3623D8804",
+				"9A4EAAAB-D0C9-48D6-8556-F77D920AAB76"
+			],
+			"isa": "PBXGroup",
+			"name": "ofxUrg",
+			"path": "../../../addons/ofxUrg",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2F14EA1E-7DF2-4BB1-9ADC-AB022A553CDD": {
 			"explicitFileType": "sourcecode.c.h",
 			"fileEncoding": "4",
 			"isa": "PBXFileReference",
 			"name": "math_utilities.h",
 			"path": "../../../addons/ofxUrg/libs/urg_library/include/math_utilities.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3528D080-FAE5-42EF-B0A1-6AECAD3FE18B": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial_linux.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_linux.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3937F1AD-D4E5-4506-BEFF-572F1F8373AB": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_serial.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3ED0B4D7-8256-469A-AB6F-0C59ECC4FBE2": {
+			"fileRef": "A626575A-B201-45B9-BA09-FACA8A62A94A",
+			"isa": "PBXBuildFile"
+		},
+		"4EFA11DE-881B-4A1A-8E7F-6DA686EDCB4C": {
+			"fileRef": "3528D080-FAE5-42EF-B0A1-6AECAD3FE18B",
+			"isa": "PBXBuildFile"
+		},
+		"4F566613-7112-406A-B5DC-9046D85CF6D2": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_ring_buffer.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_ring_buffer.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"4FF8AC75-E697-4E3B-A89B-A0877885C16E": {
+			"fileRef": "E3DCE0FC-AEB5-48D0-94BD-29C2DA9DE172",
+			"isa": "PBXBuildFile"
+		},
+		"50F0689B-FF83-42FC-830A-2C9C7AD22B81": {
+			"fileRef": "2B396D6E-7BD6-4B43-A4AB-A7CAFCD54DAD",
+			"isa": "PBXBuildFile"
+		},
+		"705548D9-575A-4801-BE43-0C149EDE9921": {
+			"fileRef": "26CA6C31-016A-40FF-9EA4-A29A6BA2CD77",
+			"isa": "PBXBuildFile"
+		},
+		"764842FB-9A87-4C48-B2A6-EB5D7E99B12A": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "detect_os.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/detect_os.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7AA980D9-E811-4802-A38A-BB65A486507B": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial_utils.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_utils.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7E08598D-CBBD-4AD9-843E-3F0A687621A0": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "Urg_driver.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/Urg_driver.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"8A43CD18-7E5D-41D8-8E8B-9F5EBF6D3944": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ticks.cpp",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/ticks.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"8E204BFE-686E-4BF6-A2BE-FB128A1FF029": {
+			"children": [
+				"ECD3149C-63E0-46F1-9D8B-32A927B64AE7",
+				"04B587F1-1C2D-4E48-9344-E7123F523073"
+			],
+			"isa": "PBXGroup",
+			"name": "urg_library",
+			"path": "../../../addons/ofxUrg/libs/urg_library",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"9787D8D6-E946-457A-B8F2-1676A4935A9B": {
+			"fileRef": "A92CB83F-C463-423E-9B82-CCA495AE1D31",
+			"isa": "PBXBuildFile"
+		},
+		"9A4EAAAB-D0C9-48D6-8556-F77D920AAB76": {
+			"children": [
+				"26CA6C31-016A-40FF-9EA4-A29A6BA2CD77",
+				"F84C35BA-0609-46A7-9B62-7F8AF5081FE4"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxUrg/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"9CC73A0B-2AC6-4353-A2DC-80B57653F3E2": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_debug.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_debug.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"9EF71282-710F-4EDE-BC7A-D017590F8F37": {
+			"fileRef": "10C3BA8E-26E2-417D-BDBF-CF3345AD62C7",
+			"isa": "PBXBuildFile"
+		},
+		"A3A7F83B-2134-4744-819C-D274A6FB3291": {
+			"fileRef": "E3EA2F9D-0E58-458D-88A5-36C74B11FBF6",
+			"isa": "PBXBuildFile"
+		},
+		"A626575A-B201-45B9-BA09-FACA8A62A94A": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial_windows.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_windows.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A92CB83F-C463-423E-9B82-CCA495AE1D31": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_tcpclient.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_tcpclient.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"AD3C2DAA-7DB7-400E-973B-4ACC624FE726": {
+			"fileRef": "8A43CD18-7E5D-41D8-8E8B-9F5EBF6D3944",
+			"isa": "PBXBuildFile"
+		},
+		"AFA2B307-CBB8-40AD-AB8F-ED2B30473B94": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_sensor.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_sensor.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"BB4B014C10F69532006C3DED": {
+			"children": [
+				"2C92D363-825D-4DB7-889A-CCEED80FF762"
+			],
+			"isa": "PBXGroup",
+			"name": "addons",
+			"path": "../../../addons",
+			"sourceTree": "<group>"
+		},
+		"C3C2FFBE-F138-4756-AA9D-B871EFB12811": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "Lidar.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/Lidar.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C3DB46A6-1E3E-4E76-AE9D-125AE5E15668": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial_utils_windows.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial_utils_windows.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C81572BB-C7EE-4EE8-88D2-3ECD14893FC9": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_tcpclient.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_tcpclient.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C84E3B81-7BC9-4CA7-B80A-0469562148D8": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_serial.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_serial.c",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E3DCE0FC-AEB5-48D0-94BD-29C2DA9DE172": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "Urg_driver.cpp",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/Urg_driver.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E3EA2F9D-0E58-458D-88A5-36C74B11FBF6": {
+			"explicitFileType": "sourcecode.c.c",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "urg_utils.c",
+			"path": "../../../addons/ofxUrg/libs/urg_library/src/urg_utils.c",
 			"sourceTree": "SOURCE_ROOT"
 		},
 		"E42962A92163ECCD00A6A9E2": {
@@ -479,21 +474,21 @@
 			"files": [
 				"E4B69E200A3A1BDC003C02F2",
 				"E4B69E210A3A1BDC003C02F2",
-				"5A8CAD69-14E8-4A42-A533-51B1B9904982",
-				"3D12EA14-54DF-461A-B8A0-299D44C6C29C",
-				"4693D0C4-8EC5-4973-ADB7-DCE520662D18",
-				"7D1FE80C-A114-4CFB-877A-2881FA8D7104",
-				"37114CFE-03FA-456C-B223-7C824D7CC4EB",
-				"26B3F4FD-EA5B-4BBE-826C-7FF8599315FB",
-				"17CD60B2-4DE3-4C2E-B05F-EBF58C2F0B65",
-				"68C8F18B-E10C-4923-BF83-E28EB4601B73",
-				"DBD26905-43B5-4958-B528-1C8B77D57EE7",
-				"2EE5B397-7671-4583-BAC1-419AE58515F0",
-				"212E6B13-AFC1-487F-A90C-3B7530706F6B",
-				"5F344579-F4C9-4B47-85AD-68691E605679",
-				"0C286D70-CA62-41FA-8ADB-A61463351314",
-				"EAE1324A-8A7B-4ACF-92BB-A3A0CE15CE3A",
-				"3243B10D-DB34-4DED-8840-0B349CFC1707"
+				"4FF8AC75-E697-4E3B-A89B-A0877885C16E",
+				"AD3C2DAA-7DB7-400E-973B-4ACC624FE726",
+				"EB713FFA-3220-4777-89F1-48A643866CC8",
+				"50F0689B-FF83-42FC-830A-2C9C7AD22B81",
+				"9EF71282-710F-4EDE-BC7A-D017590F8F37",
+				"18D27079-289A-4781-B97D-05B4BB14E6D7",
+				"FAC4D386-53F2-4B19-9B76-187AF903C6E5",
+				"4EFA11DE-881B-4A1A-8E7F-6DA686EDCB4C",
+				"01B38BC8-FAD1-4B3D-A1D4-4C3CD9F54BCF",
+				"E69838CE-80EC-411E-8F9C-06719FC9373B",
+				"1C0480D8-7BE2-49DE-A054-398ACB350986",
+				"3ED0B4D7-8256-469A-AB6F-0C59ECC4FBE2",
+				"9787D8D6-E946-457A-B8F2-1676A4935A9B",
+				"A3A7F83B-2134-4744-819C-D274A6FB3291",
+				"705548D9-575A-4801-BE43-0C149EDE9921"
 			],
 			"isa": "PBXSourcesBuildPhase",
 			"runOnlyForDeploymentPostprocessing": "0"
@@ -656,59 +651,64 @@
 			"path": "Project.xcconfig",
 			"sourceTree": "<group>"
 		},
-		"E5117FC7-CEB1-440E-AFB4-5276E2AB292F": {
-			"children": [
-				"F723ACE9-A133-4938-84CC-BF9138E3C3EC",
-				"99418EE1-C921-4157-A205-7350530E1487"
-			],
-			"isa": "PBXGroup",
-			"name": "src",
-			"path": "../../../addons/ofxUrg/src",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"E717FA14-88D6-4301-A407-16614D991C8C": {
-			"explicitFileType": "sourcecode.c.h",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_debug.h",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_debug.h",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"E7F1D493-42C3-4C21-8122-DB83184303CF": {
-			"explicitFileType": "sourcecode.c.h",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "urg_sensor.h",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_sensor.h",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"EAE1324A-8A7B-4ACF-92BB-A3A0CE15CE3A": {
-			"fileRef": "DB947593-7927-4FA6-9793-ED21F39E3EA3",
+		"E69838CE-80EC-411E-8F9C-06719FC9373B": {
+			"fileRef": "0E789712-035A-4FE2-B835-040C530F141F",
 			"isa": "PBXBuildFile"
 		},
-		"F146162A-9DF3-473E-B183-6A5F9BAD6CE9": {
+		"E9882F07-BACD-41B8-AF5C-70D536471F38": {
 			"explicitFileType": "sourcecode.c.h",
 			"fileEncoding": "4",
 			"isa": "PBXFileReference",
-			"name": "Urg_driver.h",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include/Urg_driver.h",
+			"name": "urg_errno.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_errno.h",
 			"sourceTree": "SOURCE_ROOT"
 		},
-		"F6C64D49-6793-4FE3-8019-C0854C4242EC": {
+		"EB713FFA-3220-4777-89F1-48A643866CC8": {
+			"fileRef": "1D63D09D-DD57-4918-B306-2D93E8026972",
+			"isa": "PBXBuildFile"
+		},
+		"ECD3149C-63E0-46F1-9D8B-32A927B64AE7": {
+			"children": [
+				"C3C2FFBE-F138-4756-AA9D-B871EFB12811",
+				"7E08598D-CBBD-4AD9-843E-3F0A687621A0",
+				"764842FB-9A87-4C48-B2A6-EB5D7E99B12A",
+				"2F14EA1E-7DF2-4BB1-9ADC-AB022A553CDD",
+				"26883B32-3F0C-4657-896D-93AAA7A379AD",
+				"251E0345-C587-46C7-90D8-4FBCF7CA3034",
+				"9CC73A0B-2AC6-4353-A2DC-80B57653F3E2",
+				"1CD85A53-49D0-4758-BBC6-2FDC24D1D8ED",
+				"E9882F07-BACD-41B8-AF5C-70D536471F38",
+				"4F566613-7112-406A-B5DC-9046D85CF6D2",
+				"1B16CE61-865E-4461-8789-391896B3E21D",
+				"3937F1AD-D4E5-4506-BEFF-572F1F8373AB",
+				"0E01024D-2DA2-4607-83A1-88D039192EAA",
+				"C81572BB-C7EE-4EE8-88D2-3ECD14893FC9",
+				"F75D4BBD-1B8B-48F8-AF03-39A18412B32D"
+			],
+			"isa": "PBXGroup",
+			"name": "include",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F75D4BBD-1B8B-48F8-AF03-39A18412B32D": {
 			"explicitFileType": "sourcecode.c.h",
 			"fileEncoding": "4",
 			"isa": "PBXFileReference",
-			"name": "urg_connection.h",
-			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_connection.h",
+			"name": "urg_utils.h",
+			"path": "../../../addons/ofxUrg/libs/urg_library/include/urg_utils.h",
 			"sourceTree": "SOURCE_ROOT"
 		},
-		"F723ACE9-A133-4938-84CC-BF9138E3C3EC": {
-			"explicitFileType": "sourcecode.cpp.cpp",
+		"F84C35BA-0609-46A7-9B62-7F8AF5081FE4": {
+			"explicitFileType": "sourcecode.c.h",
 			"fileEncoding": "4",
 			"isa": "PBXFileReference",
-			"name": "ofxUrg.cpp",
-			"path": "../../../addons/ofxUrg/src/ofxUrg.cpp",
+			"name": "ofxUrg.h",
+			"path": "../../../addons/ofxUrg/src/ofxUrg.h",
 			"sourceTree": "SOURCE_ROOT"
+		},
+		"FAC4D386-53F2-4B19-9B76-187AF903C6E5": {
+			"fileRef": "C84E3B81-7BC9-4CA7-B80A-0469562148D8",
+			"isa": "PBXBuildFile"
 		}
 	},
 	"openFrameworksProjectGeneratorVersion": "21",
