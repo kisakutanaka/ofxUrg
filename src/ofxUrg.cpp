@@ -128,28 +128,40 @@ void Device::drawDebugPolar() const
 
 void Device::threadedFunction()
 {
+    vector<long> local_data;
+    vector<unsigned short> local_intensity;
+    long local_timestamp;
+
     while (isThreadRunning())
     {
-        if (lock())
+        if (active)
         {
-            if (active)
+            bool success = false;
+            if (mode == DISTANCE)
             {
-                if (mode == DISTANCE)
+                success = urg.get_distance(local_data, &local_timestamp);
+            }
+            else if (mode == DISTANCE_INTENSITY)
+            {
+                success = urg.get_distance_intensity(local_data, local_intensity, &local_timestamp);
+            }
+
+            if (success)
+            {
+                if (lock())
                 {
-                    if (!urg.get_distance(data_buffer, &timestamp))
-                        ofLogError("urg get distance") << urg.what();
-                    else
-                        fps.newFrame();
-                }
-                if (mode == DISTANCE_INTENSITY)
-                {
-                    if (!urg.get_distance_intensity(data_buffer, intensity_buffer, &timestamp))
-                        ofLogError("urg get distance intensity") << urg.what();
-                    else
-                        fps.newFrame();
+                    data_buffer = local_data;
+                    intensity_buffer = local_intensity;
+                    timestamp = local_timestamp;
+                    fps.newFrame();
+                    unlock();
                 }
             }
-            unlock();
+            else
+            {
+                // ofLogError("urg get distance intensity") << urg.what();
+                // Avoid too many logs in threaded function
+            }
         }
         ofSleepMillis(1);
     }
